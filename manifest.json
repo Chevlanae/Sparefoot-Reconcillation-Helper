@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "Sparefoot Reconcillation Helper",
+	"description": "Auto marks move-ins from imported tableau list",
+	"version": "0.0.1",
+	"icons": {
+		"64": "icons/icon.png"
+	},
+	"background": {
+		"scripts": ["background_script.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://my.sparefoot.com/statement/view/*"],
+			"js": ["content_script.js"]
+		}
+	],
+	"browser_action": {
+		"default_icon": {
+			"64": "icons/icon.png"
+		},
+		"default_popup": "browserAction/index.html",
+		"default_title": "Sparefoot Reconcillation Helper"
+	},
+	"options_ui": {
+		"page": "options/index.html"
+	},
+	"permissions": ["activeTab", "windows"]
+}

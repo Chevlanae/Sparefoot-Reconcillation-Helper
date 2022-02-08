@@ -1,0 +1,23 @@
+{
+  "name": "sparefoot-reconcillation-helper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "background_script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chevlanae/Sparefoot-Reconcillation-Helper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chevlanae/Sparefoot-Reconcillation-Helper/issues"
+  },
+  "homepage": "https://github.com/Chevlanae/Sparefoot-Reconcillation-Helper#readme",
+  "dependencies": {
+    "papaparse": "^5.3.1",
+    "web-ext": "^6.6.0"
+  }
+}
